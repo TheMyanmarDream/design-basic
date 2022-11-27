@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Boxs</title>
+  </head>
+  <style>
+    html {
+      font-size: 62.5%;
+    }
+    body {
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    }
+    h1 {
+      font-size: 4.4rem;
+    }
+    h2 span {
+      color: firebrick;
+    }
+    .flex-container {
+      background-color: rgba(255, 0, 0, 0.3);
+      width: 1000px;
+      height: 400px;
+      margin: auto;
+    }
+    .flex-container div {
+      background-color: firebrick;
+      border-radius: 1rem;
+      width: 100px;
+      height: 100px;
+    }
+    .flex-container-1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .flex-container-2 {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .single-box1 {
+      align-self: flex-start;
+    }
+    .single-box2 {
+      align-self: flex-end;
+    }
+    .single-box3 {
+      align-self: flex-start;
+    }
+  </style>
+  <body>
+    <h1>Layout <span>FlexBox</span></h1>
+
+    <h3>Align - flex-start, center, flex-end</h3>
+    <div class="flex-container flex-container-1">
+      <div></div>
+    </div>
+
+    <h3>space-between space-around space-evenly</h3>
+    <div class="flex-container flex-container-2">
+      <div></div>
+      <div class="single-box2"></div>
+      <div></div>
+      <div class="single-box1"></div>
+      <div class="single-box3"></div>
+      <div></div>
+    </div>
+  </body>
+</html>

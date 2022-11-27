@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav Flexbox</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        font-family: Playfair Display;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.6rem;
+        padding: 1rem 3rem;
+      }
+      a {
+        text-decoration: none;
+        color: firebrick;
+        cursor: pointer;
+      }
+      ul {
+        display: flex;
+        list-style-type: none;
+        gap: 3rem;
+      }
+      .logo {
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+      button {
+        font-size: 1.5rem;
+        border: 2px solid firebrick;
+        color: firebrick;
+        padding: 1rem 3rem;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Fairway</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <button>Search</button>
+    </header>
+  </body>
+</html>

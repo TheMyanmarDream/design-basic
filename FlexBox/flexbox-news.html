@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox - News</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        font-family: Playfair Display;
+      }
+      section {
+        margin: 5rem;
+      }
+      h1 {
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+        position: relative;
+      }
+      h1::before {
+        content: "news";
+        text-transform: uppercase;
+        color: gray;
+        position: absolute;
+        right: 10rem;
+        font-size: 10rem;
+        top: -47px;
+      }
+      .container {
+        display: flex;
+        border-top: 1px solid black;
+        padding-top: 2rem;
+        gap: 2rem;
+      }
+      span {
+        color: fuchsia;
+      }
+      h3 {
+        font-size: 1.8rem;
+        color: fuchsia;
+      }
+      p {
+        text-align: justify;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+      }
+      @media (max-width: 980px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>FlexBox<span>News</span></h1>
+      <div class="container">
+        <div>
+          <h3>Title 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+            sapiente perferendis quis ad sequi nemo. Repudiandae dolores ipsum,
+            consequatur ipsam labore error ut inventore, atque impedit natus
+            laudantium assumenda nam. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Repellat dolor quas nisi voluptatem facilis quo
+            similique culpa corporis sunt rem porro optio quisquam, impedit
+            praesentium ratione consectetur quod ex veritatis.
+          </p>
+        </div>
+        <div>
+          <h3>Title 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+            sapiente perferendis quis ad sequi nemo. Repudiandae dolores ipsum,
+            consequatur ipsam labore error ut inventore, atque impedit natus
+            laudantium assumenda nam. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Repellat dolor quas nisi voluptatem facilis quo
+            similique culpa corporis sunt rem porro optio quisquam, impedit
+            praesentium ratione consectetur quod ex veritatis.
+          </p>
+        </div>
+        <div>
+          <h3>Title 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+            sapiente perferendis quis ad sequi nemo. Repudiandae dolores ipsum,
+            consequatur ipsam labore error ut inventore, atque impedit natus
+            laudantium assumenda nam. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Repellat dolor quas nisi voluptatem facilis quo
+            similique culpa corporis sunt rem porro optio quisquam, impedit
+            praesentium ratione consectetur quod ex veritatis.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

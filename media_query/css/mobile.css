@@ -1,0 +1,21 @@
+/* 0 -> 600px */
+p{
+    font-size: 2em;
+    color: firebrick;
+}
+/* 800px > infinity */
+@media(min-width:600px){
+    p{
+        color: green;
+    }
+    section > div{
+        width: 100%;
+        height: 200px;
+        background-color: red;
+
+}
+@media(min-width:800px){
+    p{
+        color: blue;
+    }
+}

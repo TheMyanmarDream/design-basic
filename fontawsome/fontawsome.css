@@ -1,0 +1,25 @@
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+div {
+    width: 300px;
+}
+input{
+    width: 90%;
+    border: 1px solid firebrick;
+    padding: 12px;
+}
+
+.name{
+    position: relative;
+}
+.name::before{
+    font: var(--fa-font-solid);
+    content: "\f688";
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
